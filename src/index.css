@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* User Palette: Exact Enterprise Design System */
+  /* Sidebar: Deep Violet #402568 */
+  --sidebar-bg: #402568;
+  --sidebar-hover: #4E2E7D;
+  --sidebar-border: #351E57;
+  --sidebar-text: #FFFFFF;
+  --sidebar-text-muted: #D1C5E4;
+  --sidebar-active-bg: #6941C6;
+  --sidebar-active-text: #FFFFFF;
+
+  /* Navigation and highlights: Royal Purple #6941C6 */
+  --nav-highlight: #6941C6;
+  --accent-primary: #6941C6;
+  --accent-hover: #5A35AE;
+  --accent-subtle: #F1EBFA;
+  --accent-ring: rgba(105, 65, 198, 0.25);
+
+  /* Primary buttons: Bright Orange #FF8243 */
+  --btn-primary: #FF8243;
+  --btn-primary-hover: #E96F30;
+  --btn-primary-text: #FFFFFF;
+
+  /* Selected backgrounds: Soft Lavender #F1EBFA */
+  --bg-selected: #F1EBFA;
+
+  /* Main background: Off-White #F8F7FB */
+  --bg-primary: #F8F7FB;
+
+  /* Cards: White #FFFFFF */
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #F8F5FD;
+
+  /* Success: Mint #8AC9A7 */
+  --success: #8AC9A7;
+  --success-bg: rgba(138, 201, 167, 0.18);
+  --success-text: #276749;
+
+  /* Text: Dark Charcoal #292633 */
+  --text-primary: #292633;
+  --text-secondary: #5F5972;
+  --text-muted: #8E88A2;
+
+  /* Borders: Light Grey #E9E6EF */
+  --border-color: #E9E6EF;
+  --border-darker: #D5CFE2;
+
+  --warning: #E5A43B;
+  --danger: #E05252;
+}
+
+.dark {
+  --sidebar-bg: #2B1846;
+  --sidebar-hover: #3A215E;
+  --sidebar-border: #201135;
+  --sidebar-text: #F1EBFA;
+  --sidebar-text-muted: #A89ABA;
+
+  --nav-highlight: #845EEE;
+  --accent-primary: #7C4FEB;
+  --accent-hover: #9068F2;
+  --accent-subtle: #2D1F49;
+  --accent-ring: rgba(132, 94, 238, 0.3);
+
+  --btn-primary: #FF8243;
+  --btn-primary-hover: #E96F30;
+  --btn-primary-text: #FFFFFF;
+
+  --bg-selected: #2E2248;
+  --bg-primary: #171421;
+  --bg-surface: #221D2E;
+  --bg-surface-hover: #2B253B;
+
+  --success: #8AC9A7;
+  --success-bg: rgba(138, 201, 167, 0.22);
+  --success-text: #A8E3C3;
+
+  --text-primary: #F8F7FB;
+  --text-secondary: #B9B2CE;
+  --text-muted: #8E88A2;
+
+  --border-color: #383049;
+  --border-darker: #4A4061;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono, .tabular-nums {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-darker);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

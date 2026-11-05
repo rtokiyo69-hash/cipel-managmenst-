@@ -1,0 +1,6 @@
+{
+  "name": "TalentEmber",
+  "description": "Enterprise-grade Unified Talent Acquisition, Applicant Tracking, and Workforce Management Platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
